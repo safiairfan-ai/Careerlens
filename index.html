@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerLens — AI Resume Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <section class="auth-screen" id="authScreen">
+      <div class="auth-panel">
+        <div class="auth-content">
+          <a class="brand auth-brand" href="#" aria-label="CareerLens home">
+            <span class="brand-mark">✦</span><span>Career<span class="brand-accent">Lens</span></span>
+          </a>
+          <p class="eyebrow auth-eyebrow">AI POWERED CAREER INSIGHTS</p>
+          <h1>Welcome to<br><span>CareerLens</span></h1>
+          <p class="auth-copy">Get AI-powered resume feedback, discover matching jobs and improve your career opportunities.</p>
+
+          <form id="signInForm" class="auth-form">
+            <label for="signInName">Your name
+              <span class="auth-input-wrap"><span class="auth-input-icon">♙</span><input id="signInName" type="text" required value="Alex Smith" placeholder="Enter your name" autocomplete="name" /></span>
+            </label>
+            <button class="primary-button auth-submit" type="submit">Open workspace <span>→</span></button>
+          </form>
+
+          <div class="auth-features">
+            <div class="auth-feature"><span class="feature-icon">♙</span><strong>Local &amp; Private</strong><small>Your data stays on this device</small></div>
+            <div class="auth-feature"><span class="feature-icon">ϟ</span><strong>No Account Needed</strong><small>Start instantly</small></div>
+            <div class="auth-feature"><span class="feature-icon">▣</span><strong>Simple &amp; Fast</strong><small>Analyze and improve</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-aside" aria-hidden="true">
+        <div class="auth-visual">
+          <div class="visual-glow glow-one"></div><div class="visual-glow glow-two"></div>
+          <div class="resume-sheet">
+            <div class="resume-top"><span class="resume-avatar">●</span><div><b>Your Resume</b><i></i><i class="short"></i></div></div>
+            <div class="resume-lines"><i></i><i></i><i class="medium"></i></div>
+            <h4>Skills</h4><div class="resume-lines compact"><i></i><i></i><i></i></div>
+            <h4>Experience</h4><div class="resume-lines compact"><i></i><i></i><i></i></div>
+            <h4>Education</h4><div class="resume-lines compact"><i></i><i></i></div>
+          </div>
+          <div class="float-card match-card-visual"><span class="float-label">Match Score</span><strong>85%</strong><div class="score-arc"></div></div>
+          <div class="float-card job-card-visual"><span class="float-icon">▣</span><strong>Job Matches</strong><i></i><i></i><span class="arrow">→</span></div>
+          <div class="float-card ai-card-visual"><span class="float-icon">✦</span><strong>AI Suggestions</strong><i></i><i></i><span class="arrow">→</span></div>
+          <div class="auth-feature-list">
+            <div><span>▤</span><section><strong>Resume Analysis</strong><small>Get detailed feedback to make your resume stronger.</small></section></div>
+            <div><span>⌕</span><section><strong>Job Matching</strong><small>Find roles that match your skills and experience.</small></section></div>
+            <div><span>▥</span><section><strong>Improvement Tips</strong><small>Receive personalized suggestions to stand out.</small></section></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#"><span class="brand-mark">✦</span><span>CareerLens</span></a>
+        <nav>
+          <a class="nav-item active" href="#overview"><span>⊞</span> Overview</a>
+          <a class="nav-item" href="#analyze"><span>⌁</span> Analyze resume</a>
+          <a class="nav-item" href="#jobs"><span>▣</span> Job matcher</a>
+          <a class="nav-item" href="#reports"><span>◫</span> Saved reports</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <a class="nav-item" href="#settings"><span>⚙</span> Settings</a>
+        </div>
+      </aside>
+      <main>
+        <header class="topbar"><button class="menu-button" aria-label="Open menu">☰</button><div><p class="eyebrow">YOUR CAREER DASHBOARD</p><h1 id="greeting">Good morning, Alex <span>✦</span></h1></div></header>
+        <section id="overview" class="dashboard">
+          <div class="hero-card">
+            <div class="hero-copy"><p class="eyebrow light">YOUR RESUME IS READY</p><h2>Take the next step<br/>in your career.</h2><p>See how your resume stacks up, then tailor it for the roles you want.</p><button class="primary-button" data-scroll="analyze">Analyze my resume <span>→</span></button></div>
+            <div class="hero-art"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="mini-card mini-score"><span>Resume score</span><b>—</b><small>Upload a resume</small></div><div class="mini-card mini-lines"><i></i><i></i><i></i><i></i></div><div class="spark">✦</div></div>
+          </div>
+          <div class="section-heading"><div><h2>Your latest analysis</h2><p>Insights from your most recent resume review.</p></div><button class="text-button" data-scroll="reports">View all reports →</button></div>
+          <div class="metrics-grid">
+            <article class="metric-card"><div class="metric-icon indigo">◎</div><div><p>Resume score</p><h3>—<span>/100</span></h3><small class="metric-status">Upload and analyze a resume</small></div></article>
+            <article class="metric-card"><div class="metric-icon teal">⌁</div><div><p>ATS compatibility</p><h3>—<span>%</span></h3><small class="metric-status">Available after analysis</small></div></article>
+            <article class="metric-card"><div class="metric-icon orange">⌘</div><div><p>Skills identified</p><h3>—</h3><small class="metric-status">Available after analysis</small></div></article>
+          </div>
+          <div class="content-grid">
+            <article class="panel score-panel"><div class="panel-header"><div><h3>Resume health</h3><p id="healthSubtitle">Upload and analyze a resume to see real results.</p></div></div><div class="health-row"><span>Content quality</span><div class="bar"><i style="width:0%"></i></div><b>—</b></div><div class="health-row"><span>Impact & results</span><div class="bar"><i style="width:0%"></i></div><b>—</b></div><div class="health-row"><span>Skills relevance</span><div class="bar"><i style="width:0%"></i></div><b>—</b></div><div class="health-row"><span>Formatting</span><div class="bar"><i style="width:0%"></i></div><b>—</b></div><button class="link-button" data-scroll="analyze">Analyze my resume <span>→</span></button></article>
+            <article class="panel recommendation-panel"><div class="panel-header"><div><h3>Top recommendation</h3><p id="recommendationSubtitle">Your recommendation will appear after analysis.</p></div><span class="tip-icon">✦</span></div><div class="recommendation"><div class="recommendation-num">—</div><div><h4 id="recommendationTitle">No analysis yet</h4><p id="recommendationText">Upload your resume and run an analysis to receive a recommendation based on your actual content.</p><button class="subtle-button" data-scroll="analyze">Analyze resume</button></div></div></article>
+          </div>
+        </section>
+        <section id="analyze" class="workspace section-hidden">
+          <div class="page-title"><div><p class="eyebrow">RESUME REVIEW</p><h2>Make your experience shine.</h2><p>Upload a resume or paste your text to get a detailed AI review.</p></div><button class="outline-button" id="loadSample">Load sample resume</button></div>
+          <div class="upload-layout"><article class="upload-card"><div class="dropzone" id="dropzone"><input id="resumeFile" type="file" accept=".pdf,.docx" hidden/><div class="upload-icon">↑</div><h3>Drop your resume here</h3><p>PDF or DOCX, up to 10 MB</p><button class="outline-button browse-files" type="button">Browse files</button></div><div class="or"><span>OR</span></div><label class="text-area-label">Paste your resume text<textarea id="resumeText" placeholder="Paste your resume content here..."></textarea></label></article><article class="tips-card"><span class="tip-icon large">✦</span><h3>What we look for</h3><p>CareerLens checks your resume for the elements recruiters and applicant tracking systems care about most.</p><ul><li>Clear, role-specific achievements</li><li>Relevant skills and keywords</li><li>Easy-to-scan structure</li><li>Strong, active language</li></ul></article></div><div class="analyze-footer"><p><span>🔒</span> Your resume is processed locally unless you enable AI analysis.</p><button class="primary-button" id="analyzeButton">Analyze resume <span>→</span></button></div>
+          <div class="analysis-results" id="analysisResults" hidden><div class="result-heading"><div><span class="success-badge">✓ Analysis complete</span><h2>Your resume analysis</h2><p>The score and recommendations below are generated from the resume you uploaded.</p></div></div><div class="result-grid"><article class="panel result-score"><div class="score-ring"><b>86</b><span>out of 100</span></div><h3>Great foundation</h3><p>Your resume is clear, polished, and ready for targeted improvements.</p></article><article class="panel"><h3>Strengths to keep</h3><div class="check-item"><b>✓</b><span>Clear professional progression</span></div><div class="check-item"><b>✓</b><span>Strong mix of technical skills</span></div><div class="check-item"><b>✓</b><span>Clean, readable structure</span></div></article><article class="panel"><h3>Priority improvements</h3><div class="priority-item"><b>1</b><span>Add metrics to recent achievements</span></div><div class="priority-item"><b>2</b><span>Tailor summary for target role</span></div><div class="priority-item"><b>3</b><span>Include 6 missing keywords</span></div></article></div></div>
+        </section>
+        <section id="jobs" class="workspace section-hidden"><div class="page-title"><div><p class="eyebrow">JOB MATCHER</p><h2>Find your strongest fit.</h2><p>Compare your resume against a job description and get tailored recommendations.</p></div></div><div class="matcher"><article class="panel matcher-input"><label>Job title<input id="jobTitle" value="Senior Product Designer" /></label><label>Job description<textarea id="jobDescription" placeholder="Paste the job description here...">We are looking for a Senior Product Designer to lead end-to-end product design, partner with product and engineering, and create intuitive experiences for our customers.</textarea></label><button class="primary-button" id="matchButton">Match my resume <span>→</span></button></article><article class="match-card" id="matchResult"><p class="eyebrow light">MATCH SCORE</p><div class="match-number">88<span>%</span></div><h3>Excellent match</h3><p>Your profile aligns well with this role. A few targeted changes can make it even stronger.</p><div class="match-tags"><span>Product design</span><span>Figma</span><span>User research</span><span>Design systems</span></div></article></div></section>
+        <section id="reports" class="workspace section-hidden"><div class="page-title"><div><p class="eyebrow">HISTORY</p><h2>Your saved reports.</h2><p>Return to an analysis whenever you need it.</p></div><button class="primary-button" data-scroll="analyze">New analysis <span>+</span></button></div><div class="reports-list"><article class="panel"><h3>No saved reports yet</h3><p>Every completed analysis will be saved here automatically.</p></article></div></section>
+        <section id="settings" class="workspace section-hidden"><div class="page-title"><div><p class="eyebrow">ACCOUNT</p><h2>Profile and settings.</h2><p>Manage your account and privacy preferences.</p></div></div><div class="settings-grid"><article class="panel"><h3>Profile</h3><label for="profileName">Full name<input id="profileName" value="Alex Smith" /></label><label for="careerFocus">Career focus<input id="careerFocus" value="Product Design" /></label><button class="primary-button save-profile">Save changes</button></article><article class="panel privacy-card"><span class="tip-icon large">🔒</span><h3>Your privacy</h3><p>Your resume is processed securely. You stay in control of your uploaded files and saved reports.</p><label class="switch-row"><span>Save analysis history</span><input type="checkbox" checked /></label><label class="switch-row"><span>Personalized tips</span><input type="checkbox" checked /></label></article></div></section>
+      </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
